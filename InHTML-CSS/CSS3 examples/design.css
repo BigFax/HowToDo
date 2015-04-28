@@ -1,0 +1,202 @@
+/**
+ * CSS3 animations and transformation examples
+ */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0; /* Remove the default margin */
+	overflow: hidden; /* Hide right scroll bar. Everything out of window size is hide */
+}
+
+#container {
+	position: relative; /* relative to become the parent absolute element */
+	width: 432px;
+	height: 432px; 
+	margin: 100px auto 0;
+}
+
+#container .box {
+	background-color: green;
+}
+
+/* Apply this css to all the .box */
+.box {
+	position: absolute;/* To can give any position without problem with other element (markup) */
+	width: 100px;
+	height: 100px;
+}
+
+#box {
+	width: 100%;
+	height: 100%;
+	-webkit-animation: move 20s infinite; /* Call "move" animation, execute this animation in 20s a repeat indefinitely */
+}
+
+#box1 { 
+	top: 0px;
+	left: 0px; 
+	-webkit-animation: color1 4s infinite, move1 10s infinite; /* Call "color1" and "move1" animation. See #box above to understand parameters */
+}
+
+#box2 { 
+	top: 0px;
+	left: 166px; 
+	-webkit-animation: color2 4s infinite, move2 4s infinite; /* Same as above with different params */
+}
+
+#box3 {
+	top: 0px;
+	left: 332px; 
+	-webkit-animation: color1 4s infinite, move3 10s infinite; /* Same as above with different params */
+}
+
+#box4 { 
+	top: 166px; 
+	left: 0px; 
+	-webkit-animation: color3 4s infinite, move4 4s infinite; /* Same as above with different params */
+}
+
+#box5 { 
+	top: 166px; 
+	left: 166px; 
+	-webkit-animation: color2 4s infinite, move5 10s infinite; /* Same as above with different params */
+}
+
+#box6 { 
+	top: 166px; 
+	left: 332px; 
+	-webkit-animation: color3 4s infinite, move6 4s infinite; /* Same as above with different params */
+}
+
+#box7 { 
+	top: 332px; 
+	left: 0px; 
+	-webkit-animation: color1 4s infinite, move7 10s infinite; /* Same as above with different params */
+}
+
+#box8 { 
+	top: 332px; 
+	left: 166px; 
+	-webkit-animation: color2 4s infinite, move8 4s infinite; /* Same as above with different params */
+}
+
+#box9 { 
+	top: 332px; 
+	left: 332px; 
+	-webkit-animation: color1 4s infinite, move9 10s infinite; /* Same as above with different params */
+}
+
+/** 
+ * Declare the "color1" animation 
+ * At 20 the background will have the color #45896F, at 40% #954FA5...
+ * This animation will be execute in the time defined at the call (see above which element call "color1")
+ * -webkit- is use to make the compatibility with chrome and safari for the old version of the browser
+ * use -moz- for mozilla firefox and -o- to opera.
+ * It will work without prefix for the new version of the browser.
+*/
+@-webkit-keyframes color1 {
+	20% { background-color: #45896F; }
+	40% { background-color: #954FA5; }
+	60% { background-color: #b45555; }
+	80% { background-color: #659A99; }
+	100% { background-color: green; }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes color2 {
+	20% { background-color: #C8C8C8; }
+	40% { background-color: #DCDCDC; }
+	60% { background-color: #99AABB; }
+	80% { background-color: #EFCCCC; }
+	100% { background-color: green; }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes color3 {
+	20% { background-color: #110033; }
+	40% { background-color: #35AB78; }
+	60% { background-color: #96FA22; }
+	80% { background-color: #B6524A; }
+	100% { background-color: green; }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes colorOut {
+	0% { background-color: red; }
+	50% { background-color: none; }
+}
+
+/** 
+ * Declare the "move" animation 
+ * Here transform use rotate to execute a rotation on the element.
+ * transform-origin define the point which is the gravity center of the rotation.
+*/
+@-webkit-keyframes move {
+	20% { transform-origin: 50% 50%; transform: rotate(-360deg); }
+	40% { transform-origin: 50% 50%; transform: rotate(360deg); }
+	60% { transform-origin: 50% 50%; transform: rotate(540deg); }
+	80% { transform-origin: 50% 50%; transform: rotate(-180deg); }
+	100% { transform-origin: 50% 50%; transform: rotate(360deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move1 {
+	25% { left: 332px; top: 0px; }
+	50% { top: 332px; left: 332px; }
+	75% { left: 0px; top: 332px; }
+	100% { top: 0px; transform: rotate(720deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move2 {
+	50% { top: 332px; }
+	100% { top: 0px; transform: rotate(720deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move3 {
+	25% { left: 0px; top: 0px; }
+	50% { top: 332px; left: 0px; }
+	75% { left: 332px; top: 332px; }
+	100% { top: 0px; transform: rotate(-720deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move4 {
+	50% { left: 332px; }
+	100% { left: 0px; transform: rotate(-360deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move5 {
+	50% { transform: rotate(1440deg); }
+	100% { transform: rotate(-1440deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move6 {
+	50% { left: 0px; }
+	100% { left: 332px; transform: rotate(360deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move7 {
+	25% { left: 332px; top: 332px; }
+	50% { top: 0px; left: 332px; }
+	75% { left: 0px; top: 0px; }
+	100% { top: 332px; transform: rotate(720deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move8 {
+	50% { top: 0px; }
+	100% { top: 332px; transform: rotate(-1080deg); }
+}
+
+/* Same logic, as above */
+@-webkit-keyframes move9 {
+	25% { left: 0px; top: 332px; }
+	50% { top: 0px; left: 0px; }
+	75% { left: 332px; top: 0px; }
+	100% { top: 332px; transform: rotate(-720deg); }
+}
