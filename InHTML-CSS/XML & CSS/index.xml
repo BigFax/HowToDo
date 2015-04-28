@@ -1,0 +1,55 @@
+<!-- 
+	The goal of this exercice is to design a xml file with css 
+-->
+<?xml version="1.0" encoding= "utf-8"?><!-- Declare the version and encoding -->
+<?xml-stylesheet type="text/css" href="design.css"?><!-- Link the CSS file to this XML file -->
+
+<!-- 
+	Main root element (markup) "breakfast_menu". Every XML file need a root element
+	Declare 2 namespaces with prefix. xmlns is to declare namespace
+	ns1 and ns2 can be replace by any name, it's the name of the prefix
+	Inside the double quote, the unique id !
+	You can then prefix any element with the namespace prefix to put the element inside the namespace : <ns1:name> for example
+-->
+<breakfast_menu xmlns:ns1="namespace1" xmlns:ns2="namespace2"> 
+	<ns1:food>
+		<ns1:name>Belgian Waffles</ns1:name>
+		<ns1:price>$5.95</ns1:price>
+		<ns1:description>
+		Two of our famous Belgian Waffles with plenty of real maple syrup
+		</ns1:description>
+		<ns1:calories>650</ns1:calories>
+	</ns1:food>
+	<ns1:food>
+		<ns1:name>Strawberry Belgian Waffles</ns1:name>
+		<ns1:price>$7.95</ns1:price>
+		<ns1:description>
+		Light Belgian waffles covered with strawberries and whipped cream
+		</ns1:description>
+		<ns1:calories>900</ns1:calories>
+	</ns1:food>
+	<ns1:food>
+		<ns1:name>Berry-Berry Belgian Waffles</ns1:name>
+		<ns1:price>$8.95</ns1:price>
+		<ns1:description>
+		Light Belgian waffles covered with an assortment of fresh berries and whipped cream
+		</ns1:description>
+		<ns1:calories>900</ns1:calories>
+	</ns1:food>
+	<ns1:food>
+		<ns1:name>French Toast</ns1:name>
+		<ns1:price>$4.50</ns1:price>
+		<ns1:description>
+		Thick slices made from our homemade sourdough bread
+		</ns1:description>
+		<ns1:calories>600</ns1:calories>
+	</ns1:food>
+	<ns2:food>
+		<ns2:name>Homestyle Breakfast</ns2:name>
+		<ns2:price>$6.95</ns2:price>
+		<ns2:description>
+		Two eggs, bacon or sausage, toast, and our ever-popular hash browns
+		</ns2:description>
+		<ns2:calories>950</ns2:calories>
+	</ns2:food>
+</breakfast_menu>

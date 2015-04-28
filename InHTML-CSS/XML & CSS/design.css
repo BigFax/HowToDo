@@ -1,0 +1,120 @@
+/**
+ * CSS file to design XML file
+ * It's just a normal css file, as for any other markup language
+ */
+
+/* Declare two namespaces with the unique id and the name inside the XML file */
+@namespace ns1 url("namespace1");
+@namespace ns2 url("namespace2");
+
+breakfast_menu {
+	width: 100%;
+}
+
+/* Select food markup for all namespaces */
+*|food {
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	margin: 10px;
+	padding: 5px;
+	float: left;
+}
+
+/* :hover is a pseudo-class use to change the style of the element when the mouse is on this element */
+*|food:hover {
+	cursor: pointer;
+}
+
+/**
+ * nth-child() is is a pseudo-class function use to select elements depends on his parameter. 
+ * Here he select even and odd food element depends of the food parent 
+ */
+*|food:nth-child(even), food:nth-child(odd) {
+	transition: background-color 2s ease, transform 1s ease-in-out;
+}
+
+/* We can combine pseudo-classes (as nth-child and hover) together */
+*|food:nth-child(even):hover { transform: scale(1.2); background-color: green; }
+*|food:nth-child(odd):hover { transform: scale(1.2); background-color: red; }
+
+/** 
+ * > means all the direct child. All the child which are directly inherit from the parent, the child of the child of the parent willbe not selected
+ * * means all. Here it means all the direct child ;) 
+ */
+*|food > * {
+	display: block;
+	text-align: center;
+}
+
+*|name {
+ 	font-weight: bold;
+ 	text-decoration: underline;
+}
+
+*|price {
+	position: absolute;
+	right: 5px;
+	bottom: 15px;
+	border-top: 3px solid #444;
+	border-bottom: 3px solid #444;
+	transform: rotate(-45deg);
+}
+
+*|description {
+	text-align: left;
+	margin: 10px 0 0 0;
+}
+
+*|calories {
+	margin: 25px 0 0 0;
+	float: right;
+}
+
+*|calories:after {
+	content: ' calories';
+}
+
+/* We use the ns2 namespace to select only the food which are in the ns2 namespace. We call the animation declare below */
+ns2|food {
+	-webkit-animation: alert 4s infinite;
+}
+
+/* Here we declare a css3 animation called "alert" which change the background */
+@-webkit-keyframes alert {
+	0% { background-color: none; }
+	50% { background-color: red; }
+	100% { background-color: none; }
+}
+
+@-webkit-keyframes price {
+	50% { transform: rotate(315deg); }
+	100% { transform: rotate(-45deg); }
+}
+
+/**
+ * Media queries are use to change the css style of a website depends of different devices 
+ * We can adapt the size of text with em, the size of block with % without media queries
+ * Media queries are really use to display it in another way which offer a better user experience on each device
+ * @media to use media queries. "screen" is use to define normal computer, phone, tablet etc...
+ * "and" is to precise some rules. Rules are css properties.
+ * Here, when the website is less than 800px, we change css properties to these news defined below.
+ */
+@media screen and (max-width: 800px) {
+	*|food {
+		box-sizing: border-box;
+		width: 80%;
+		margin: 10px auto 0 auto;
+		float: none;
+	}
+
+	*|price:hover {
+		-webkit-animation: price 4s infinite;
+	}
+
+	*|description {
+		text-align: center;
+	}
+}
