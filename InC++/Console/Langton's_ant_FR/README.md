@@ -1,4 +1,4 @@
-# Console
+# Langton's ant
 
 A REVOIR, programme fait en début d'apprentissage C++.
 
