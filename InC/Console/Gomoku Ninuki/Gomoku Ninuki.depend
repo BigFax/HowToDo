@@ -1,0 +1,147 @@
+# depslib dependency file v1.0
+1326324354 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<math.h>
+	<ctype.h>
+	"affichage.h"
+	"pose.h"
+	"alignement.h"
+	"paires.h"
+	"gagne.h"
+	"fichier.h"
+	"fonctions.h"
+
+1326330295 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\paires.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<math.h>
+	<ctype.h>
+
+1326330194 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\alignement.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<math.h>
+	<ctype.h>
+
+1326327723 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\pose.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<math.h>
+	<ctype.h>
+
+1326470993 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\affichage.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<math.h>
+	<ctype.h>
+
+1325843156 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\affichage.h
+
+1325863888 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\pose.h
+
+1325863888 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\alignement.h
+
+1325863888 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\paires.h
+
+1326328441 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\gagne.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<math.h>
+	<ctype.h>
+
+1326470909 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\fichier.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<math.h>
+	<ctype.h>
+
+1325841218 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\gagne.h
+
+1326202725 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\fichier.h
+
+1326327794 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\fonctions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<math.h>
+	<ctype.h>
+
+1326319751 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\gomoku ninuki\fonctions.h
+
+1326959303 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\alignement.c
+	<stdio.h>
+	<stdlib.h>
+	"alignement.h"
+
+1326959113 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\fichier.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fichier.h"
+
+1326959368 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\fonctions.c
+	<stdio.h>
+	<stdlib.h>
+	"fonctions.h"
+
+1326959335 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\gagne.c
+	<stdio.h>
+	<stdlib.h>
+	"gagne.h"
+
+1327790720 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\main.c
+	<stdio.h>
+	<stdlib.h>
+	"affichage.h"
+	"pose.h"
+	"alignement.h"
+	"paires.h"
+	"gagne.h"
+	"fichier.h"
+	"fonctions.h"
+
+1325843156 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\affichage.h
+
+1325863888 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\pose.h
+
+1325863888 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\alignement.h
+
+1325863888 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\paires.h
+
+1325841218 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\gagne.h
+
+1326202725 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\fichier.h
+
+1326319751 c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\fonctions.h
+
+1326959318 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\paires.c
+	<stdio.h>
+	<stdlib.h>
+	"paires.h"
+
+1326959295 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\pose.c
+	<stdio.h>
+	<stdlib.h>
+	"pose.h"
+
+1327053392 source:c:\users\nova\desktop\supinfo\b1\mini projet\langage c\143096henrijacquesadrien\gomoku ninuki\affichage.c
+	<stdio.h>
+	<stdlib.h>
+	"affichage.h"
+
