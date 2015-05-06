@@ -1,0 +1,297 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #eef2f6;
+    color: #003165;
+}
+
+ol, ul, li, p, h1, h2, h3, h4, h5, h6 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: "PatuaOne";
+  src: url('../fonts/PatuaOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Gudea";
+  src: url('../fonts/Gudea-Regular.ttf');
+}
+
+@font-face {
+  font-family: "GudeaItalic";
+  src: url('../fonts/Gudea-Italic.ttf');
+}
+
+.part-25 { width: 25%; }
+.part-50 { width: 50%; }
+.part-75 { width: 75%; }
+
+.part-25, .part-50, .part-75 {
+    padding: 0 20px;
+    float: left;
+}
+
+.navbar-inverse .navbar-nav li a:hover, .navbar-inverse .navbar-nav li a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav li a {
+    color: #999999;
+}
+.nav li a:hover, .nav li a:focus {
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+
+.navbar-nav li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-nav li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.navbar-inverse {
+    background-color: #1f3044;
+}
+
+.navbar-brand#title {
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: "PatuaOne";
+}
+
+#page_title {
+    font-size:1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-family: "Gudea";
+}
+
+ul li a.link {
+    font-size: 0.85em;;
+    /*letter-spacing: 0.1em;*/
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.first {
+    margin: 0 0 0 80px;
+}
+
+.second {
+    margin: 0 0 0 30px;
+    float: left;
+}
+
+.form-part {
+    width: 50%;
+    margin: 0 0 25px 0;
+    float: left;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.logos {
+    margin: 20px 0 0 0;
+}
+
+.logos li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: box;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -ms-flex-align: center;
+    float: left;
+    margin: 0;
+    width: 12.5%;
+    height: 80px;
+    text-align: center;
+}
+
+.logos img {
+    width: auto;
+    max-width: 70%;
+    max-height: 85%;
+}
+
+.main_sep {
+    display: block;
+    height: 1px;
+    background: #c7d2e2;
+    margin: 0.4em 0 2em 0;
+}
+
+.sep {
+    display: block;
+    height: 1px;
+    background: #c7d2e2;
+    margin: 2.5em 0 1.5em 0;
+}
+
+.conversation_sep {
+    display: block;
+    height: 1px;
+    background: #c7d2e2;
+    margin: 0.5em 0 1.5em 0;
+}
+
+.container_sep {
+    display: block;
+    height: 1px;
+    background: #c7d2e2;
+    margin: 1em 0 1em 0;
+}
+
+.grid li {
+    width: 33.3222222222%;
+    height: 70px;
+    margin: 25px 0 0 0;
+    text-align: center;
+    float: left;
+}
+
+.grid li strong{ font-size: 1.3em; color: #86a5d1; }
+.grid li small{ font-size: 0.8em; }
+
+.sentence {
+    padding: 10px;
+    margin: 0 20px 10px 20px;
+    font-size: 1.4em;
+    font-family: "Gudea", Helvetica, Arial, sans-serif;
+}
+
+.subscribe, .sentence {
+    text-align: center;
+}
+
+.btn-primary-custom {
+    min-width: 200px;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    background-color: #86a5d1;
+    border: none;
+    color: #ffffff;
+}
+
+.btn-primary-custom:hover {
+    background-color: #3276b1;
+    color: #ffffff;
+}
+
+td .btn {
+    display: block;
+    margin: 0 auto;
+}
+
+blockquote {
+    color: #7690B3;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.8em;
+    line-height: 1.7em;
+    padding-right: 10%;
+    border-left: 5px solid #cccccc;
+}
+
+blockquote div {
+    font-family: "GudeaItalic", Helvetica, Arial, sans-serif;
+}
+
+blockquote em {
+    display: inline-block;
+    padding-left: 2%;
+    font-size: 0.6em;
+    float: right;
+}
+
+.form-input {
+    display: block;
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.with-label {
+    width: 700px;
+    height: 50px;
+    margin: 5px auto 25px auto;
+}
+
+.with-label input {
+    margin: 0;
+    float: right;
+}
+
+.with-label label {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+}
+
+.col-sm-9 {
+ width: 100%; 
+ padding: 25px 15px;
+}
+
+.l-center {
+    text-align: center;
+    padding: 0 0 10px 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+#sub-body {
+    position: relative;
+    min-height: 100%;
+}
+
+#main-container {
+    padding-bottom: 120px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    background: #1f3044;
+    color: #c7d2e2;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    bottom: 0;
+}
+
