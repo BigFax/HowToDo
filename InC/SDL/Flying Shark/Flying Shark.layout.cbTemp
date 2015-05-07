@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="constantes.h" open="1" top="0" tabpos="2">
+		<Cursor position="957" topLine="18" />
+	</File>
+	<File name="continue.c" open="1" top="0" tabpos="6">
+		<Cursor position="7842" topLine="6" />
+	</File>
+	<File name="continue.h" open="1" top="0" tabpos="5">
+		<Cursor position="119" topLine="0" />
+	</File>
+	<File name="fonctions.c" open="1" top="0" tabpos="12">
+		<Cursor position="9388" topLine="243" />
+	</File>
+	<File name="fonctions.h" open="1" top="0" tabpos="11">
+		<Cursor position="523" topLine="0" />
+	</File>
+	<File name="jouer.c" open="1" top="1" tabpos="4">
+		<Cursor position="1423" topLine="275" />
+	</File>
+	<File name="jouer.h" open="1" top="0" tabpos="3">
+		<Cursor position="190" topLine="0" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1">
+		<Cursor position="4232" topLine="74" />
+	</File>
+	<File name="options.c" open="1" top="0" tabpos="10">
+		<Cursor position="3540" topLine="245" />
+	</File>
+	<File name="options.h" open="1" top="0" tabpos="9">
+		<Cursor position="88" topLine="0" />
+	</File>
+	<File name="scores.c" open="1" top="0" tabpos="8">
+		<Cursor position="337" topLine="0" />
+	</File>
+	<File name="scores.h" open="1" top="0" tabpos="7">
+		<Cursor position="80" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

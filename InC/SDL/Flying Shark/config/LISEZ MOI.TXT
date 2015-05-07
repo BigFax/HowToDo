@@ -1,0 +1,1 @@
+Ne pas toucher les fichiers des dossiers à la racine de "config".
