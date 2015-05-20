@@ -1,0 +1,4 @@
+api_user_homepage:
+    type:         rest
+    resource:     "MewPipeAPIUserBundle:User"
+    name_prefix:  api_

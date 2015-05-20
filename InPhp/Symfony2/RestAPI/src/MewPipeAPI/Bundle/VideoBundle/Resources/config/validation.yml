@@ -1,0 +1,7 @@
+MewPipeAPI\VideoBundle\Entity\Video:
+    exclusion_policy: ALL
+    properties :
+        name :
+            expose : true
+        path :
+            expose : true

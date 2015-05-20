@@ -1,0 +1,4 @@
+api_video_homepage:
+    type:         rest
+    resource:     "MewPipeAPIVideoBundle:Video"
+    name_prefix:  api_

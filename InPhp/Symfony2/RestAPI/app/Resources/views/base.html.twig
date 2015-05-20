@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/starter-template.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+    <div id="sub-body">
+        <div id="main-container">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="collapse navbar-collapse ">
+                        <ul class="nav navbar-nav" style="width:100%;">
+                            <div style="width:8%; float:left;">
+                                <li>
+                                    <a href="" class="navbar-brand" id="title">
+                                        MewPipe
+                                    </a>
+                                </li>
+                            </div>
+                            <div style="width:92%; float:left;">
+                                {# <li class="second"><a class="link" href="">Logout</a></li>
+
+                                <li class="second"><a class="link" href="">Send a new message</a></li>
+
+                                <li class="second"><a class="link" href="">Manage your profil</a></li> #}
+
+                                <li class="second"><a class="link" href="">Login</a></li>
+
+                                <li class="second"><a class="link" href="">Register</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-xs-12 col-sm-9">
+                    <div role="alert" class="sentence alert alert-danger" style="margin: 0 0 25px 0; display: none;">
+                        <span class="sr-only">Error:</span>
+                        {# Error message here #}
+                    </div>
+                    <div role="info" class="sentence alert alert-success" style="margin: 0 0 25px 0; display: none;">
+                        <span class="sr-only">Info:</span>
+                        {# Info message here #}
+                    </div>
+
+        {% block body %}
+        {% endblock %}
+
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>SupSMS is a sub-company of Supinfo International University - All right are reserved :)</p>
+            </footer>
+        </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

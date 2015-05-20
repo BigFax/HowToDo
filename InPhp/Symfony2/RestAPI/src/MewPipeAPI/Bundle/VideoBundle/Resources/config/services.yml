@@ -1,0 +1,4 @@
+services:
+#    mew_pipe_api_video.example:
+#        class: MewPipeAPI\Bundle\VideoBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
